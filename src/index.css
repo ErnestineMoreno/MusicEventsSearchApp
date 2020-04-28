@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*Color Palette:
+#9381ff
+#b8b8ff
+#f8f7ff
+#ffeedd
+#ffd8be */
+
+/* Set box-sizing for all elements */
+*,
+:after,
+:before {
+	box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Create color variables */
+:root {
+	--primary: #b8b8ff;
+	--secondary: #9381ff;
+	--secondary-light: #ffd8be;
+}
+
+/* Remove the body margin */
+body {
+	font-family: sans-serif;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0 1rem;
+	background-color: #9381ff;
+	text-align: center;
+}
+
+/* Style the button and tell it not to grow */
+button {
+	background-color: var(--primary);
+	border: 0;
+	flex-grow: 0;
+	font-size: 1.2rem;
+	line-height: 1;
+	padding: 0.75rem 1rem;
+}
+
+/* Add some margin on the left of any buttons
+that follow another button or an input */
+button + button,
+input + button {
+	margin-left: 2px;
+}
+
+form {
+	padding: 2rem 0;
+}
+
+/* Style the input and tell it to grow */
+input {
+	background-color: var(--secondary-light);
+	border: 2px solid var(--secondary);
+	color: var(--white);
+	flex-grow: 1;
+	font-size: 1.2rem;
+	padding: 0.75rem 1rem;
+	width: 100%;
+}
+
+/* Set the color of the placeholder text */
+input::placeholder {
+	color: var(--white);
+}
+
+/* Apply flex to the form */
+.form-horizontal {
+	align-items: center;
+	display: flex;
+}
+
+/* Add a media query to add more space between
+the button and input when the browser is at least
+600px wide */
+@media (min-width: 600px) {
+	button + button,
+	input + button {
+		margin-left: 1rem;
+	}
 }
