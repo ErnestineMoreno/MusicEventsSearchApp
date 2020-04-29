@@ -12,6 +12,8 @@
 	box-sizing: border-box;
 }
 
+
+
 /* Create color variables */
 :root {
 	--primary: #b8b8ff;
@@ -27,6 +29,7 @@ body {
 	padding: 0 1rem;
 	background-color: #9381ff;
 	text-align: center;
+	cursor: pointer;
 }
 
 /* Style the button and tell it not to grow */
