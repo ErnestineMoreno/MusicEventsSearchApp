@@ -18,10 +18,45 @@ As a user, I would like to filter upcoming event dates as I scroll through the s
 
 ## API
 
-Bandsintown API Link:
-https://app.swaggerhub.com/apis-docs/Bandsintown/PublicAPI/3.0.1#/
-https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0
+Songkick API Link:
+https://api.songkick.com/api/3.0/search/artists.json?apikey={your_api_key}&query={artist_name}
+https://api.songkick.com/api/3.0/search/locations.json?query={search_query}&apikey={your_api_key}
 
+
+ API Artist Object Response:
+ ```{
+    id: 253846,
+    displayName: "Radiohead",
+    uri: "http://www.songkick.com/artists/253846-radiohead?utm_source=45852&utm_medium=partner",
+    identifier: [
+      {
+        href: "http://api.songkick.com/api/3.0/artists/mbid:a74b1b7f-71a5-4011-9441-d0b5e4122711.json",
+        mbid: "a74b1b7f-71a5-4011-9441-d0b5e4122711"
+      }
+    ],
+    onTourUntil: "2018-04-25"
+  }
+  ```
+
+  API Location Object Response:
+  ```{
+    "city":"San Francisco, CA, US",
+    "lat":37.7842398,
+    "lng":-122.4332937
+  }
+  ```
+API references/documentation:
+All the info you need should be here: http://www.songkick.com/developer, let me know if you need any other assistance.
+
+Please note that access to our API is covered by our standard terms of use which include:
+
+- Songkick is the exclusive live music data partner for the service.
+- Please provide a link from each event listed to the corresponding Songkick event page.
+- Clearly attribute Songkick as the provider of concert data with the “Concerts by Songkick” logos found in section 2. (‘Attribution Requirements’) of our terms of use.
+
+For our full terms of use please see http://www.songkick.com/developer/api-terms-of-use
+
+Finally, make sure you check out our API group here: https://groups.google.com/forum/#!forum/songkick-api, this is where we’ll be announcing new features and changes to our API and you can also use it as somewhere to get feedback and support.
 
 ## Component Hierarchy
 
