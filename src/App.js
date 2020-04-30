@@ -22,6 +22,7 @@ class App extends React.Component {
          <LocationList /> */}
          <Navbar />
          <HamburgerMenu />
+         <Background />
          <main style={{marginTop:'64px'}}>
            <p>This is the page content!</p>
         
