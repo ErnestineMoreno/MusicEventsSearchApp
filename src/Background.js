@@ -1,5 +1,6 @@
 import React from 'react';
-import '.Background.css';
+// eslint-disable-next-line
+import Background from './Background.css';
 
 
 const background = props => (

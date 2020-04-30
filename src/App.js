@@ -8,7 +8,8 @@ import ArtistList from './components/ArtistList';
 import LocationList from './components/LocationList';
 import Navbar from './components/Navbar/Navbar';
 import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu'
-
+// eslint-disable-next-line
+import Background from './Background.js'
 
 class App extends React.Component {
 
