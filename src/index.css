@@ -12,7 +12,6 @@
 	box-sizing: border-box;
 }
 
-
 /* Create color variables */
 :root {
 	--primary: #b8b8ff;
@@ -39,18 +38,18 @@ button {
 	font-size: 1.5rem;
 	line-height: 0;
 	padding: 0.75rem 1rem;
-	color:	#ffd8be
+	color: #ffd8be;
 }
 
 /* margin on the left of any buttons
 that follow another button or an input */
 button + button,
 input + button {
-margin-left: 2px;
+	margin-left: 2px;
 }
 
 form {
-padding: 2rem 0;
+	padding: 2rem 0;
 }
 
 /* Style the input and tell it to grow */
@@ -69,15 +68,14 @@ input::placeholder {
 	color: var(--white);
 }
 
-
 .search-bar {
 	align-items: center;
 	display: flex;
-	color: #9381ff
+	color: #9381ff;
 }
 
 .submit {
-color: #ffd8be	
+	color: #ffd8be;
 }
 /* Added a media query to add more space between
 the button and input when the browser is at least
@@ -89,6 +87,6 @@ the button and input when the browser is at least
 	}
 }
 
-h1{
-color: #ffd8be	
+h1 {
+	color: #b8b8ff;
 }

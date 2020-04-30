@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 // eslint-disable-next-line
 import { Route, Link } from "react-router-dom";
 import ArtistList from './components/ArtistList';
@@ -6,14 +6,23 @@ import ArtistList from './components/ArtistList';
 import LocationList from './components/LocationList';
 
 
-function App() {
-  return (
-    <div>
+class App extends React.Component {
+  state = {
+    visible: true
+  };
+
+  render() {
+     return (
+    <div className='App'>
       <h1>Bliss</h1>
       <ArtistList />
-      <LocationList />
+         <LocationList />
+         <Fragment />
     </div>
- );
+ ); 
+
+  }
+
 
 }
 
