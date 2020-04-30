@@ -13,7 +13,6 @@
 }
 
 
-
 /* Create color variables */
 :root {
 	--primary: #b8b8ff;
@@ -34,23 +33,24 @@ body {
 
 /* Style the button and tell it not to grow */
 button {
-	background-color: var(--primary);
+	background-color: var(--secondary);
 	border: 0;
 	flex-grow: 0;
-	font-size: 1.2rem;
-	line-height: 1;
+	font-size: 1.5rem;
+	line-height: 0;
 	padding: 0.75rem 1rem;
+	color:	#ffd8be
 }
 
-/* Add some margin on the left of any buttons
+/* margin on the left of any buttons
 that follow another button or an input */
 button + button,
 input + button {
-	margin-left: 2px;
+margin-left: 2px;
 }
 
 form {
-	padding: 2rem 0;
+padding: 2rem 0;
 }
 
 /* Style the input and tell it to grow */
@@ -69,13 +69,17 @@ input::placeholder {
 	color: var(--white);
 }
 
-/* Apply flex to the form */
-.form-horizontal {
+
+.search-bar {
 	align-items: center;
 	display: flex;
+	color: #9381ff
 }
 
-/* Add a media query to add more space between
+.submit {
+color: #ffd8be	
+}
+/* Added a media query to add more space between
 the button and input when the browser is at least
 600px wide */
 @media (min-width: 600px) {
@@ -83,4 +87,8 @@ the button and input when the browser is at least
 	input + button {
 		margin-left: 1rem;
 	}
+}
+
+h1{
+color: #ffd8be	
 }

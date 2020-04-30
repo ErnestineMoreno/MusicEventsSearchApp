@@ -7,9 +7,6 @@ import LocationList from './components/LocationList';
 
 
 function App() {
-
-
-
   return (
     <div>
       <h1>Bliss</h1>

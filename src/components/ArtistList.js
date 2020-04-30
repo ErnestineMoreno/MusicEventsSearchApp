@@ -20,7 +20,7 @@ const data = await response.json();
  
 render() {
     return (
-        <form className='form-horizontal'>
+        <form className='search-bar'>
         <input placeholder='Search By Artist Name' type='text' name='searchString' required />
         <button type='submit'>Go!</button>    
         </form>           
