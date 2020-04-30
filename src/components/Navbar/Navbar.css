@@ -1,0 +1,52 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #ffd8be;
+	height: 56px;
+}
+
+.navbar-logo {
+	margin-left: 1rem;
+}
+
+.navbar-logo a {
+	color: #9381ff;
+	text-decoration: none;
+	font-size: 2rem;
+}
+
+/* need spacing around logo to take entirety */
+.logo-spacing {
+	flex: 1;
+}
+
+/* Using Flexbox for the navbar menu */
+.navbar-menu {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 0 1rem;
+}
+
+.navbar-search-items a {
+	text-decoration: none;
+	color: #9381ff;
+}
+
+.navbar-search-items ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-search-items li {
+	padding: 0 5rem;
+}
+
+.navbar-search-items a:hover,
+.navbar-search-items a:active {
+	color: #b8b8ff;
+}

@@ -19,15 +19,20 @@
 	--secondary-light: #ffd8be;
 }
 
+html {
+	height: 100%;
+}
 /* Remove the body margin */
 body {
-	font-family: sans-serif;
+	/* font-family: sans-serif;
 	line-height: 1.5;
 	margin: 0;
-	padding: 0 1rem;
+	padding: 0 1rem; */
 	background-color: #9381ff;
-	text-align: center;
-	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+
 }
 
 /* Style the button and tell it not to grow */
