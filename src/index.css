@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+
 /*Color Palette:
 #9381ff
 #b8b8ff
 #f8f7ff
 #ffeedd
 #ffd8be */
+
+
 
 /* Set box-sizing for all elements */
 *,
@@ -33,7 +38,7 @@ body {
 	padding: 0;
 	height: 100%;
 	cursor: pointer;
-
+	font-family: 'Merienda', cursive;
 }
 
 /* Style the button and tell it not to grow */

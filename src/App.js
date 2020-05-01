@@ -45,7 +45,7 @@ class App extends React.Component {
     }
      return (
     <div style={{height: '100%'}}>
-      {/* <h1>Bliss</h1>
+      {/*
       <ArtistList />
          <LocationList /> */}
          {/* Passing my hamburgerToggleClickHandler to the Navbar since it holds the button that triggers it */}
@@ -54,7 +54,7 @@ class App extends React.Component {
          <HamburgerMenu show={this.state.hamburgerOpen} />
          {background}
          <main style={{marginTop:'64px'}}>
-           <p>Music Events Search App</p>
+           <p>Testing filler content. Remove text, Tina ♬</p>
         
          </main>
          
