@@ -4,8 +4,8 @@ import Background from './Background.css';
 
 
 const background = props => (
-
-<div className="background" />
+//adding the onClick listener and execute what I have in my click prop
+<div className="background" onClick={props.click} />
 );
 
 

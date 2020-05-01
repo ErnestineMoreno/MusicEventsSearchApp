@@ -1,12 +1,51 @@
 .hamburger {
 	height: 100%;
 	background-color: #ffeedd;
-	box-shadow: 2px 0px 5px #b8b8ff;
+	box-shadow: 1px 0px 5px #ffeedd;
 	/* fixed position so the menu doesn't overlap */
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 400px;
+	width: 70%;
+	max-width: 400px;
 	/* so that this is above the background */
 	z-index: 200;
+	/*added animation to the hamburger menu*/
+	transform: translateX(-100%);
+	transition: transform 0.2s ease-out;
 }
+
+.hamburger.open {
+transform: translateX(0);
+}
+
+.hamburger ul {
+	height: 100%;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.hamburger li {
+	margin: 0.5rem 0;
+}
+
+.hamburger a {
+	font-size: 1.4rem;
+	text-decoration: none;
+	color: #9381ff;
+}
+
+.hamburger a:hover,
+.hamburger a:active {
+	color: #b8b8ff;
+}
+
+@media (min-width: 769px ) {
+	.hamburger {
+		display: none;
+
+	}
+}
+

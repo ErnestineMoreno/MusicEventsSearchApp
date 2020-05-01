@@ -5,8 +5,9 @@ import './Navbar.css';
 const navbar = props => (
     <header className="navbar">
         <nav className="navbar-menu">
-            <div>
-                <HamburgerToggleButton />
+            <div className="navbarToggle">
+                {/* from app.js */}
+                <HamburgerToggleButton click={props.hamburgerClickHandler} />
             </div>
             <div className="navbar-logo"><a href="/">BLISS</a></div>
 

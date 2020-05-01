@@ -50,3 +50,21 @@
 .navbar-search-items a:active {
 	color: #b8b8ff;
 }
+
+/*remove top navigation items when viewing on a mobile device*/
+@media (max-width: 768px) {
+	.navbar-search-items {
+		display: none ;
+	}
+}
+/*remove hamburger from desktop and only visible when on a mobile device*/
+@media (min-width: 769px) {
+	.navbarToggle {
+		display: none;
+	}
+}
+
+/*to avoid unecessary margin when hamburger menu isn't showing on desktop */
+.navbar-logo {
+margin-left: 0;	
+}
