@@ -16,21 +16,6 @@ import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu';
 import Background from './Background.js';
 // eslint-disable-next-line
 
-const ArtistSearch = () => {
-return (            <form className='search-bar'>
-                    <input placeholder='Search By Artist' type='text' required />
-                    <button className='search-button' type='submit'>Go!</button>    
-                    </form>
-)                 
-}
-
-const LocationSearch = () => {
-return (            <form className='search-bar'>
-                    <input placeholder='Search By City' type='text' required />
-                    <button className='search-button' type='submit'>Go!</button>    
-                    </form>
-)                 
-}
 
 class App extends React.Component {
 //adding a function so that the hamburger menu can be accessible
@@ -54,22 +39,7 @@ class App extends React.Component {
     this.setState({hamburgerOpen: false});
   };
   
-  async componentDidMount() {
-    // eslint-disable-next-line 
-    const artistUrl = `https://api.songkick.com/api/3.0/search/artists.json?apikey=${process.env.REACT_APP_SONGKICK_API_KEY}&query=slander
-`;
-     
-    // eslint-disable-next-line
-    const response = await fetch(artistUrl);
-    // eslint-disable-next-line
-    const data = await response.json();
-    console.log(artistUrl)
-    console.log(response)
-    console.log(data)
-    console.log(data.resultsPage.results.artist)
-    
-  }
-  
+ 
 
   render() {
     // Input an if else statement so I have the option of whether or not the hamburger menu and background is visible to the user
@@ -93,7 +63,7 @@ class App extends React.Component {
 <Router>   
             <div className="App">
             
-              <ul>
+              <ul className="nav-bar">
                 <li><NavLink to="/" exact activeStyle={
                   { color: 'bisque'}
                 }>Home</NavLink></li>
@@ -102,11 +72,11 @@ class App extends React.Component {
                   { color: 'bisque'}
                 }>About</NavLink></li>
 
-                <li><NavLink to="/ArtistSearch" exact activeStyle={
+                <li><NavLink to="/ArtistList" exact activeStyle={
                   { color: 'bisque'}
                 }>Search by Artist ♪</NavLink></li>
 
-                <li><NavLink to="/LocationSearch" exact activeStyle={
+                <li><NavLink to="/LocationList" exact activeStyle={
                   { color: 'bisque'}
                 }>Search by City ♪</NavLink></li>
               </ul>
@@ -124,8 +94,8 @@ class App extends React.Component {
               }
               } />
           
-       <Route path="/ArtistSearch" exact strict component={ArtistSearch} /> 
-       <Route path="/LocationSearch" exact strict component={LocationSearch} />   
+       <Route path="/ArtistList" exact strict component={ArtistList} /> 
+       <Route path="/LocationList" exact strict component={LocationList} />   
               
   </div>    
   </Router>

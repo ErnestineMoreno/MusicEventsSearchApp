@@ -1,39 +1,65 @@
 import React from 'react';
-// eslint-disable-next-line
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+class ArtistList extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      artists: [],
+    };
 
-export default class ArtistList extends React.Component {
-    
-    
-    async componentDidMount() {
-            // eslint-disable-next-line 
-     const artistUrl = `https://api.songkick.com/api/3.0/search/artists.json?apikey=${process.env.REACT_APP_SONGKICK_API_KEY}&query=slander
-`;
-        // eslint-disable-next-line
-        const response = await fetch(artistUrl);
-        // eslint-disable-next-line
-        const data = await response.json();
-        console.log(artistUrl)
-    console.log(response)
-    console.log(data)
-        console.log(data.resultsPage.results.artist)    
-    }
+    this.handleInputChange = this.handleInputChange.bind(this);
+  }
 
+  async fetchArtists(search) {
+    const artistUrl = `https://api.songkick.com/api/3.0/search/artists.json?apikey=71oba8m5CPNDhwfE&query=${search}`;
+    const response = await fetch(artistUrl);
+    const data = await response.json();
+    if (data.resultsPage.totalEntries > 0)
+    this.setState({
+      artists: data.resultsPage.results.artist,
+    });
+    else 
+      this.setState({
+      artists: [],
+    });
+  }
 
-    render() {
-   
+  handleInputChange(event) {
+    this.fetchArtists(event.target.value);
+  }
+
+  render() {
     return (
-        <form className='search-bar'>
-        <input placeholder='Search By Artist' type='text' required />
-        <button className='search-button' type='submit'>Go!</button>    
-        </form>           
-
-     
-   
-  
-
-  )  
+      <div>
+        <form className="search-bar">
+          <input
+            placeholder="Search By Artist"
+            type="text"
+            name="artist"
+            required
+            onChange={this.handleInputChange}
+          />
+          <button className="search-button" type="submit">
+            Go!
+          </button>
+        </form>
+        {this.state.artists.map((value, index) => (
+          <div key={index}>
+            <ul>
+              <li>Name: {value.displayName}</li>
+              <li>On Tour Until: {value.onTourUntil}</li>
+              <li>
+                <a href={value.uri} target="_blank" rel="noopener noreferrer">
+                  Link to event
+                </a>
+              </li>
+            </ul>
+          </div>
+        ))}
+        {this.state.artists.length === 0 && <div>No records are found.</div>}
+      </div>
+    );
+  }
 }
 
-}
+export default ArtistList;

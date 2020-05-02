@@ -1,6 +1,6 @@
-body{
-    cursor: pointer;
-    text-align: center;
+body {
+	cursor: pointer;
+	text-align: center;
 }
 
 .App ul {
@@ -14,4 +14,9 @@ body{
 	justify-content: center;
 	height: 100%;
 	padding: 0 1rem;
+}
+
+ul.nav-bar li,
+ul.nav-bar li a {
+	display: inline;
 }
