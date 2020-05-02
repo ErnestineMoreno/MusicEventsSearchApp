@@ -1,12 +1,20 @@
+
+
+
+
+
 body {
 	cursor: pointer;
 	text-align: center;
+color:#555B6E;
 }
 
 .App ul {
 	text-decoration: none;
 	list-style: none;
+	
 }
+
 
 .App a {
 	text-decoration: none;
@@ -14,7 +22,7 @@ body {
 	justify-content: center;
 	height: 100%;
 	padding: 0 1rem;
-	color: #555B6E;
+	color: #ffd8be;
 }
 
 ul.nav-bar li,

@@ -39,7 +39,7 @@ transform: translateX(0);
 
 .hamburger a:hover,
 .hamburger a:active {
-	color: #b8b8ff;
+	color: #a1afaece;
 }
 
 @media (min-width: 769px ) {

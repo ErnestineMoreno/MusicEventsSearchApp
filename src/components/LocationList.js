@@ -41,7 +41,7 @@ class LocationList extends React.Component {
             onChange={this.handleInputChange}
           />
           <button className="search-button" type="submit">
-            Go!
+            Submit
           </button>
         </form>
         {this.state.locations.map((value, index) => (
@@ -57,7 +57,7 @@ class LocationList extends React.Component {
             </ul>
           </div>
         ))}
-        {this.state.locations.length === 0 && <div>Sorry. No upcoming events in this City/Metro Area.</div>}
+        {this.state.locations.length === 0 && <div>Sorry! No upcoming events in this City/Metro Area.</div>}
       </div>
     );
   }

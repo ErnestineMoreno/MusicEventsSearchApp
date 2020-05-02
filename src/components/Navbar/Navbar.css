@@ -27,7 +27,7 @@
 	display: flex;
 	align-items: center;
 	height: 100%;
-	padding: 0 1rem;
+	padding: 0 1.5rem;
 }
 
 .navbar-search-items a {
@@ -64,7 +64,7 @@
 	}
 }
 
-/*to avoid unecessary margin when hamburger menu isn't showing on desktop */
+/*to avoid extra margin when hamburger menu isn't showing on desktop */
 .navbar-logo {
 	margin-left: 0;
 }

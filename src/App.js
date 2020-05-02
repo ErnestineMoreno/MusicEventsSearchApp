@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 // eslint-disable-next-line 
 import { BrowserRouter as Router, Switch, Route, Link, NavLink } from "react-router-dom";
 // eslint-disable-next-line 
@@ -13,6 +13,7 @@ import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu';
 // eslint-disable-next-line
 import Background from './Background.js';
 // eslint-disable-next-line
+
 
 
 class App extends React.Component {
@@ -80,13 +81,18 @@ class App extends React.Component {
 
               <Route path="/" exact strict render={
                 () => {
-                return (<h1>This is the Homepage</h1>)
+                return (<p>insert something here</p>)
               }
               } />        
               
               <Route path="/contact" exact strict render={
                 () => {
-                return (<h1>Enter my contact info</h1>)
+                  return (
+                    <p>Created with &hearts; by Ernestine Moreno </p>
+                   
+                      
+                 
+                    )
               }
               } />
           

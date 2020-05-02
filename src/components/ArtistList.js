@@ -40,7 +40,7 @@ class ArtistList extends React.Component {
             onChange={this.handleInputChange}
           />
           <button className="search-button" type="submit">
-            Go!
+            Submit
           </button>
         </form>
         {this.state.artists.map((value, index) => (

@@ -62,9 +62,9 @@ form {
 
 /* Style the input and tell it to grow */
 input {
-	background-color: #BEE3DB;
+	background-color: #bee3db;
 	border: 2px solid #555b6e;
-	color: #555B6E;
+	color: #555b6e;
 	flex-grow: 1;
 	font-size: 1rem;
 	padding: 0.75rem 1rem;
@@ -73,13 +73,13 @@ input {
 
 /* placeholder text */
 input::placeholder {
-	color: #a5a58d;
+	color: #555b6e;
 }
 
 .search-bar {
 	align-items: center;
 	display: flex;
-	color: #a5a58d;
+	color: #555b6e;
 }
 
 .submit {
@@ -95,11 +95,11 @@ the button and input when the browser is at least
 	}
 }
 
-h1 {
-	color: #fff1e6;
+h3 {
+	color: #555b6e;
 }
 
 p {
-	color: #fff1e6;
-	font-size: 20px;
+	color: #555b6e;
+	font-size: 15px;
 }
