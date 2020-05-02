@@ -34,7 +34,7 @@ class LocationList extends React.Component {
       <div>
         <form className="search-bar">
           <input
-            placeholder="Search By City"
+            placeholder="Enter your City/Metro Area"
             type="text"
             name="city"
             required
@@ -51,13 +51,13 @@ class LocationList extends React.Component {
               <li>Country: {value.city.country.displayName}</li>
               <li>
                 <a href={value.metroArea.uri} target="_blank" rel="noopener noreferrer">
-                  Metro Area
+                  Click here to see upcoming events
                 </a>
               </li>
             </ul>
           </div>
         ))}
-        {this.state.locations.length === 0 && <div>No records are found.</div>}
+        {this.state.locations.length === 0 && <div>Sorry. No upcoming events in this City/Metro Area.</div>}
       </div>
     );
   }

@@ -15,17 +15,12 @@ const navbar = props => (
 <HamburgerToggleButton click={props.hamburgerClickHandler} />
             </div>
 <Router>
-<div className="navbar-logo"><Link to="/">bliss</Link></div>
+<div className="navbar-logo"><a href="/">bliss </a></div>
 <div className="logo-spacing"></div>
 <div className="navbar-search-items">
-<ul>
-<li><Link to='/ArtistSearch'>♪ search by Artist</Link></li>
-<li><Link to='/LocationSearch'>♪ search by City</Link></li>
-</ul>
 </div>  
 </Router>         
-        </nav>
-         
+</nav>        
 </header>
 );
 

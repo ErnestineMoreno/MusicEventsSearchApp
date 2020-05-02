@@ -33,7 +33,7 @@ class ArtistList extends React.Component {
       <div>
         <form className="search-bar">
           <input
-            placeholder="Search By Artist"
+            placeholder="Enter Artist(s) or Band Name"
             type="text"
             name="artist"
             required
@@ -46,17 +46,17 @@ class ArtistList extends React.Component {
         {this.state.artists.map((value, index) => (
           <div key={index}>
             <ul>
-              <li>Name: {value.displayName}</li>
+              <li>Artist Name: {value.displayName}</li>
               <li>On Tour Until: {value.onTourUntil}</li>
               <li>
                 <a href={value.uri} target="_blank" rel="noopener noreferrer">
-                  Link to event
+                  Click here to see upcoming events
                 </a>
               </li>
             </ul>
           </div>
         ))}
-        {this.state.artists.length === 0 && <div>No records are found.</div>}
+        {this.state.artists.length === 0 && <div>Sorry. No upcoming events for this Artist.</div>}
       </div>
     );
   }

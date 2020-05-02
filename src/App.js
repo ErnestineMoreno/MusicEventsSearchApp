@@ -1,6 +1,4 @@
 // eslint-disable-next-line
-import { Fragment } from 'react';
-// eslint-disable-next-line
 import React, { Component } from 'react';
 // eslint-disable-next-line 
 import { BrowserRouter as Router, Switch, Route, Link, NavLink } from "react-router-dom";
@@ -39,9 +37,7 @@ class App extends React.Component {
     this.setState({hamburgerOpen: false});
   };
   
- 
-
-  render() {
+   render() {
     // Input an if else statement so I have the option of whether or not the hamburger menu and background is visible to the user
     let background;
     if (this.state.hamburgerOpen) {
@@ -68,13 +64,13 @@ class App extends React.Component {
                   { color: 'bisque'}
                 }>Home</NavLink></li>
 
-                <li><NavLink to="/about" exact activeStyle={
+                <li><NavLink to="/contact" exact activeStyle={
                   { color: 'bisque'}
-                }>About</NavLink></li>
+                }>Contact</NavLink></li>
 
                 <li><NavLink to="/ArtistList" exact activeStyle={
                   { color: 'bisque'}
-                }>Search by Artist ♪</NavLink></li>
+                }>Search by Artist ♬</NavLink></li>
 
                 <li><NavLink to="/LocationList" exact activeStyle={
                   { color: 'bisque'}
@@ -84,13 +80,13 @@ class App extends React.Component {
 
               <Route path="/" exact strict render={
                 () => {
-                return (<h1>This is the Homepage ♬</h1>)
+                return (<h1>This is the Homepage</h1>)
               }
               } />        
               
-              <Route path="/about" exact strict render={
+              <Route path="/contact" exact strict render={
                 () => {
-                return (<h1>This is the About Page</h1>)
+                return (<h1>Enter my contact info</h1>)
               }
               } />
           

@@ -11,7 +11,7 @@ const hamburgerMenu = props => {
         <nav className={hamburgerClasses}>
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
             <li><a href="/ArtistList">Search By Artist</a></li>
             <li><a href="/LocationList">Search By City</a></li>
         </ul>
