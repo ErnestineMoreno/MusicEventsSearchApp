@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
 /*Color Palette:
-#9381ff
-#b8b8ff
-#f8f7ff
-#ffeedd
-#ffd8be */
+#555B6E
+#89B0AE
+#DDBEA9
+#BEE3DB
+#ffd8be
+#FAF9F9
+#FFD6BA
+#cb997e
+*/
 
-/* Set box-sizing for all elements */
 *,
 :after,
 :before {
@@ -16,8 +19,8 @@
 
 /* Create color variables */
 :root {
-	--primary: #b8b8ff;
-	--secondary: #9381ff;
+	--primary: #555b6e;
+	--secondary: #a5a58d;
 	--secondary-light: #ffd8be;
 }
 
@@ -30,7 +33,7 @@ body {
 	line-height: 1.5;
 	margin: 0;
 	padding: 0 1rem; */
-	background-color: #9381ff;
+	background-color: #89b0ae;
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -38,19 +41,16 @@ body {
 	font-family: 'Merienda', cursive;
 }
 
-/* Style the button and tell it not to grow */
 button {
-	background-color: var(--secondary);
+	background-color: #89b0ae;
 	border: 0;
 	flex-grow: 0;
 	font-size: 1.5rem;
 	line-height: 0;
 	padding: 0.75rem 1rem;
-	color: #ffd8be;
+	color: #555b6e;
 }
 
-/* margin on the left of any buttons
-that follow another button or an input */
 button + button,
 input + button {
 	margin-left: 2px;
@@ -62,24 +62,24 @@ form {
 
 /* Style the input and tell it to grow */
 input {
-	background-color: var(--secondary-light);
-	border: 2px solid var(--secondary);
-	color: var(--white);
+	background-color: #BEE3DB;
+	border: 2px solid #555b6e;
+	color: #555B6E;
 	flex-grow: 1;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	padding: 0.75rem 1rem;
 	width: 100%;
 }
 
-/* Set the color of the placeholder text */
+/* placeholder text */
 input::placeholder {
-	color: var(--white);
+	color: #a5a58d;
 }
 
 .search-bar {
 	align-items: center;
 	display: flex;
-	color: #9381ff;
+	color: #a5a58d;
 }
 
 .submit {
@@ -96,10 +96,10 @@ the button and input when the browser is at least
 }
 
 h1 {
-	color: #b8b8ff;
+	color: #fff1e6;
 }
 
 p {
-	color: #ffd8be;
+	color: #fff1e6;
 	font-size: 20px;
 }

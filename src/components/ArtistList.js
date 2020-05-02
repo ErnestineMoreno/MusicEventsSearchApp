@@ -56,7 +56,7 @@ class ArtistList extends React.Component {
             </ul>
           </div>
         ))}
-        {this.state.artists.length === 0 && <div>Sorry. No upcoming events for this Artist.</div>}
+        {this.state.artists.length === 0 && <div>Sorry! No upcoming events for this Artist.</div>}
       </div>
     );
   }

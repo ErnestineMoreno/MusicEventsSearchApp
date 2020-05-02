@@ -3,7 +3,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #ffd8be;
+	background-color: #cb997e;
 	height: 56px;
 }
 
@@ -12,14 +12,14 @@
 }
 
 .navbar-logo a {
-	color: #9381ff;
+	color: #555b6e;
 	text-decoration: none;
 	font-size: 2rem;
 }
 
 /* need spacing around logo to take entirety */
 .logo-spacing {
-	flex: 1;
+	flex: 5;
 }
 
 /* Using Flexbox for the navbar menu */
@@ -32,7 +32,7 @@
 
 .navbar-search-items a {
 	text-decoration: none;
-	color: #9381ff;
+	color: #cb997e;
 }
 
 .navbar-search-items ul {
@@ -48,13 +48,13 @@
 
 .navbar-search-items a:hover,
 .navbar-search-items a:active {
-	color: #b8b8ff;
+	color: #faf9f9;
 }
 
 /*remove top navigation items when viewing on a mobile device*/
 @media (max-width: 768px) {
 	.navbar-search-items {
-		display: none ;
+		display: none;
 	}
 }
 /*remove hamburger from desktop and only visible when on a mobile device*/
@@ -66,5 +66,5 @@
 
 /*to avoid unecessary margin when hamburger menu isn't showing on desktop */
 .navbar-logo {
-margin-left: 0;	
+	margin-left: 0;
 }

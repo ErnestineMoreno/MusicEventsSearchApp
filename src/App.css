@@ -14,6 +14,7 @@ body {
 	justify-content: center;
 	height: 100%;
 	padding: 0 1rem;
+	color: #555B6E;
 }
 
 ul.nav-bar li,
@@ -21,4 +22,5 @@ ul.nav-bar li a {
 	display: inline;
 	text-decoration: none;
 	list-style: none;
+	color: #ffd8be;
 }
