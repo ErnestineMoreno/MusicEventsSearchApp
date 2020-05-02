@@ -1,5 +1,6 @@
 import React from 'react';
 import './HamburgerMenu.css';
+import { NavLink } from "react-router-dom";
 
 const hamburgerMenu = props => {
     let hamburgerClasses = "hamburger";
@@ -10,10 +11,13 @@ const hamburgerMenu = props => {
     return (
         <nav className={hamburgerClasses}>
         <ul>
-            <li><a href="/">Search By Artist</a></li>
-            <li><a href="/">Search By City</a></li>
+            <li><NavLink to="/ArtistSearch">Search By Artist</NavLink></li>
+            <li><NavLink to="/LocationSearch">Search By City</NavLink></li>
         </ul>
-    </nav>);
+        </nav>
+    
+    );
+    
 };
 
 export default hamburgerMenu;

@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
-
 /*Color Palette:
 #9381ff
 #b8b8ff
 #f8f7ff
 #ffeedd
 #ffd8be */
-
-
 
 /* Set box-sizing for all elements */
 *,
@@ -103,6 +100,6 @@ h1 {
 }
 
 p {
-	color:#ffd8be; 
-	font-size: 30px;
+	color: #ffd8be;
+	font-size: 20px;
 }

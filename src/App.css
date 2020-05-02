@@ -1,0 +1,17 @@
+body{
+    cursor: pointer;
+    text-align: center;
+}
+
+.App ul {
+	text-decoration: none;
+	list-style: none;
+}
+
+.App a {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	padding: 0 1rem;
+}
