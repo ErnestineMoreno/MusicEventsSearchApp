@@ -5,6 +5,7 @@ class ArtistList extends React.Component {
     super(props);
     this.state = {
       artists: [],
+      search: "",
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -25,38 +26,46 @@ class ArtistList extends React.Component {
   }
 
   handleInputChange(event) {
-    this.fetchArtists(event.target.value);
+    event.preventDefault();
+    let value = document.getElementById('artists').value;
+    this.fetchArtists(value);
+    this.setState({
+      search: value,
+    });
   }
 
   render() {
     return (
       <div>
-        <form className="search-bar">
+        <form className="search-bar" onSubmit={this.handleInputChange}>
           <input
-            placeholder="Enter Artist(s) or Band Name"
+            placeholder="start typing here..."
             type="text"
-            name="artist"
+            name="artists"
+            id="artists"
             required
+            autoComplete="off"
             onChange={this.handleInputChange}
           />
           <button className="search-button" type="submit">
-            Submit
+            <span role="img" aria-label="headphones">🎧</span>
+            
           </button>
         </form>
         {this.state.artists.map((value, index) => (
           <div key={index}>
             <ul>
-              <li>Artist Name: {value.displayName}</li>
-              <li>On Tour Until: {value.onTourUntil}</li>
+              <li>Artist: {value.displayName}</li>
               <li>
                 <a href={value.uri} target="_blank" rel="noopener noreferrer">
-                  Click here to see upcoming events
+                  Click to view upcoming events
                 </a>
               </li>
             </ul>
           </div>
         ))}
-        {this.state.artists.length === 0 && <div>Sorry! No upcoming events for this Artist.</div>}
+        {(this.state.search.length > 0 && this.state.artists.length === 0) && <div>Sorry! No matches found for this entry</div>}
+        {this.state.search.length === 0 && <div>Enter Artist, DJ or Band name</div>}
       </div>
     );
   }

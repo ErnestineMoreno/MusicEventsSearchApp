@@ -4,9 +4,7 @@ import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link, NavLink } from "react-router-dom";
 // eslint-disable-next-line 
 import AppStyles from './App.css';
-// eslint-disable-next-line 
 import ArtistList from './components/ArtistList';
-// eslint-disable-next-line 
 import LocationList from './components/LocationList';
 import Navbar from './components/Navbar/Navbar';
 import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu';
@@ -14,12 +12,10 @@ import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu';
 import Background from './Background.js';
 // eslint-disable-next-line
 
-
-
 class App extends React.Component {
 //adding a function so that the hamburger menu can be accessible
   //initializing the state and setting it to false
-    state ={
+    state = {
       hamburgerOpen: false
     };
   
@@ -81,18 +77,32 @@ class App extends React.Component {
 
               <Route path="/" exact strict render={
                 () => {
-                return (<p>insert something here</p>)
-              }
-              } />        
-              
+                  return (<div>
+                    <h4>bliss: an on-the-go music events search app powered by Songkick, where you can view upcoming music festivals and events from a plethora of both underground and mainstream artists available for you to choose from by artist name or location. </h4>
+
+                    <video controls autoplay height="240" width="360"><source src="/animation.mp4" type="video/mp4"></source></video>
+                  </div>)
+                  
+                      }
+                      } />        
+                      
               <Route path="/contact" exact strict render={
                 () => {
-                  return (
-                    <p>Created with &hearts; by Ernestine Moreno </p>
-                   
-                      
-                 
-                    )
+                  return ( 
+                    
+                    <p>
+                      <div>
+                        <h1>Created with &hearts; by Ernestine Moreno</h1>
+                      </div>
+                
+                <ul>
+                  <h2>Linkedin ➳ linkedin.com/in/etinamoreno/</h2>
+                  <h2>GitHub ➳ github.com/ErnestineMoreno </h2>
+                  <h2>Email ➳ ernestinemoreno4@gmail.com </h2>
+                      </ul>
+                  
+                    </p>                                     
+                                  )
               }
               } />
           
@@ -101,11 +111,6 @@ class App extends React.Component {
               
   </div>    
   </Router>
-          
-
-
-
-
       </main>
       </div>
     );
