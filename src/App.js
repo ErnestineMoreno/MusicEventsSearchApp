@@ -81,7 +81,7 @@ class App extends React.Component {
                     <h1>bliss</h1>
                     <h4>What is bliss? It's a music events search app powered by Songkick! View upcoming music festivals & events on-the-go. Search & scroll through a plethora of both underground and mainstream artists available for you to choose from by artist name or location. </h4>
 
-                    <video controls autoplay height="240" width="360"><source src="/animation.mp4" type="video/mp4"></source></video>
+                    <video controls autoPlay height="300" width="400"><source src="/animation.mp4" type="video/mp4"></source></video>
                   </div>)
                   
                       }
