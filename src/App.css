@@ -1,8 +1,6 @@
 body {
 	cursor: pointer;
 	text-align: center;
-
-	
 	color: #555b6e;
 }
 
@@ -22,14 +20,20 @@ body {
 
 ul.nav-bar li,
 ul.nav-bar li a {
+	display: flex;
+	justify-content: space-around;
 	display: inline;
 	text-decoration: none;
 	list-style: none;
-	color: #ffd8be;
+	color: #555b6e;
 }
 
 h2,
 h3,
 h4 {
 	color: #555b6e;
+}
+
+h1 {
+	color: ##555b6e;
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Capriola&display=swap');
 
 /*Color Palette:
 #555B6E
@@ -38,7 +38,7 @@ body {
 	padding: 0;
 	height: 100%;
 	cursor: pointer;
-	font-family: 'Merienda', cursive;
+	font-family: 'Capriola', sans-serif;
 }
 
 button {

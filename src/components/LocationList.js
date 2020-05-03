@@ -41,7 +41,7 @@ class LocationList extends React.Component {
       <div>
         <form className="search-bar" onSubmit={this.handleInputChange}>
           <input
-            placeholder="start typing here..."
+            placeholder="where on earth are you? type here..."
             type="text"
             name="city"
             id="locations"

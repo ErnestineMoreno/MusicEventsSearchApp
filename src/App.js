@@ -1,7 +1,7 @@
 // eslint-disable-next-line
-import React, { Component, Fragment } from 'react';
+import React from 'react';
 // eslint-disable-next-line 
-import { BrowserRouter as Router, Switch, Route, Link, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Route,  NavLink } from "react-router-dom";
 // eslint-disable-next-line 
 import AppStyles from './App.css';
 import ArtistList from './components/ArtistList';
@@ -58,27 +58,28 @@ class App extends React.Component {
             
               <ul className="nav-bar">
                 <li><NavLink to="/" exact activeStyle={
-                  { color: 'slategrey'}
+                  { color: 'bisque'}
                 }>Home</NavLink></li>
 
                 <li><NavLink to="/contact" exact activeStyle={
-                  { color: 'slategrey'}
+                  { color: 'bisque'}
                 }>Contact</NavLink></li>
 
                 <li><NavLink to="/ArtistList" exact activeStyle={
-                  { color: 'slategrey'}
+                  { color: 'bisque'}
                 }>Search by Artist ♬</NavLink></li>
 
                 <li><NavLink to="/LocationList" exact activeStyle={
-                  { color: 'slategrey'}
-                }>Search by City ♪</NavLink></li>
+                  { color: 'bisque'}
+                }>Search by City ♬</NavLink></li>
               </ul>
               
 
               <Route path="/" exact strict render={
                 () => {
                   return (<div>
-                    <h4>bliss: an on-the-go music events search app powered by Songkick, where you can view upcoming music festivals and events from a plethora of both underground and mainstream artists available for you to choose from by artist name or location. </h4>
+                    <h1>bliss</h1>
+                    <h4>What is bliss? It's a music events search app powered by Songkick! View upcoming music festivals & events on-the-go. Search & scroll through a plethora of both underground and mainstream artists available for you to choose from by artist name or location. </h4>
 
                     <video controls autoplay height="240" width="360"><source src="/animation.mp4" type="video/mp4"></source></video>
                   </div>)
@@ -90,18 +91,17 @@ class App extends React.Component {
                 () => {
                   return ( 
                     
-                    <p>
-                      <div>
-                        <h1>Created with &hearts; by Ernestine Moreno</h1>
-                      </div>
-                
+<p>
+                <br></br>
                 <ul>
                   <h2>Linkedin ➳ linkedin.com/in/etinamoreno/</h2>
                   <h2>GitHub ➳ github.com/ErnestineMoreno </h2>
                   <h2>Email ➳ ernestinemoreno4@gmail.com </h2>
-                      </ul>
-                  
-                    </p>                                     
+                  <br></br> <div>
+                  <h1>Created by Ernestine "Tina" Moreno &hearts; </h1>
+                  </div>
+                  </ul>
+</p>                                     
                                   )
               }
               } />
