@@ -18,7 +18,7 @@ const navbar = props => (
 <div className="navbar-logo"><a href="/">bliss</a></div>
 <div className="logo-spacing"></div>
                 <div className="navbar-search-items">
-                    <p>                    <img src={'by-songkick-pink.png'} alt="Songkick copyright logo"></img></p>
+                    <p>                    <img src={'powered-by-songkick-pink.png'} alt="Songkick copyright logo"></img></p>
 </div>  
 </Router>         
 </nav>        

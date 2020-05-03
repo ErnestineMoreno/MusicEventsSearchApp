@@ -17,7 +17,7 @@
 	box-sizing: border-box;
 }
 
-/* Create color variables */
+/* color variables */
 :root {
 	--primary: #555b6e;
 	--secondary: #a5a58d;
@@ -27,12 +27,8 @@
 html {
 	height: 100%;
 }
-/* Remove the body margin */
+
 body {
-	/* font-family: sans-serif;
-	line-height: 1.5;
-	margin: 0;
-	padding: 0 1rem; */
 	background-color: #89b0ae;
 	margin: 0;
 	padding: 0;
@@ -60,7 +56,6 @@ form {
 	padding: 2rem 0;
 }
 
-/* Style the input and tell it to grow */
 input {
 	background-color: #bee3db;
 	border: 2px solid #555b6e;
@@ -71,9 +66,10 @@ input {
 	width: 100%;
 }
 
-/* placeholder text */
 input::placeholder {
 	color: #555b6e;
+	font-family: 'Capriola', sans-serif;
+	font-size: 18px;
 }
 
 .search-bar {
@@ -85,7 +81,7 @@ input::placeholder {
 .submit {
 	color: #ffd8be;
 }
-/* Added a media query to add more space between
+/* media query to add more space between
 the button and input when the browser is at least
 600px wide */
 @media (min-width: 600px) {
