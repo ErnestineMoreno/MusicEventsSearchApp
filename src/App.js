@@ -79,10 +79,10 @@ class App extends React.Component {
                 () => {
                   return (<div>
                     <h1>bliss</h1>
-                    <h4>What is bliss? It's a music event search app powered by Songkick!
+                    <h4>What is 'bliss'? It's a music event search app powered by Songkick. 
                       <br></br>
-                                           View upcoming music festivals & events on-the-go, and search & scroll through a plethora of both underground and mainstream artists available for you to choose from by  artist name or location. </h4>
-
+                                          Songkick offers a plethora of both underground and mainstream artists available for you to choose from.
+                                          <br></br> Search by Artist or City to view upcoming music festivals & events near you while you're on-the-go!</h4>
                     <video controls autoPlay height="300" width="400"><source src="/animation.mp4" type="video/mp4"></source></video>
                   </div>)
                   

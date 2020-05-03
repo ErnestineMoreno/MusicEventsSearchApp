@@ -9,7 +9,8 @@ const hamburgerMenu = props => {
 
     return (
         <nav className={hamburgerClasses}>
-        <ul>
+            <ul>
+                <li>                    <img src={'by-songkick-pink.png'} alt="Songkick copyright logo"></img></li>
             <li><a href="/">Home</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="/ArtistList">Search By Artist</a></li>
