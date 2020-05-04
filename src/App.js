@@ -79,7 +79,7 @@ class App extends React.Component {
                 () => {
                   return (<div>
                     <h1>bliss</h1>
-                    <h4>What is 'bliss'? It's a music event search app powered by Songkick's exclusive live music data. 
+                    <h4>What is "bliss"? It's a music event search app powered by Songkick's exclusive live music data. 
                       <br></br>
                                           Showcasing a plethora of both underground & mainstream artists available for you to choose from.
                                           <br></br> Search by Artist or City to view upcoming music festivals & events near you while you're on-the-go!</h4>
