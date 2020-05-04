@@ -7,7 +7,6 @@ const hamburgerToggleButton = props => (
     <div className='toggle-button-divs' />
     <div className='toggle-button-divs' />
     <div className='toggle-button-divs' />
-
   </button>
 )
 

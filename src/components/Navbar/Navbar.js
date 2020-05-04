@@ -6,6 +6,7 @@ import './Navbar.css'
 // eslint-disable-next-line
 import ArtistList from '../ArtistList';
 
+// Hou comment: pascal-case your component names (i.e., NavBar)
 const navbar = props => (
   <header className='navbar'>
     <nav className='navbar-menu'>
