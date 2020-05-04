@@ -15,7 +15,12 @@ body {
 	justify-content: center;
 	height: 100%;
 	padding: 0 1rem;
-	color: #b63f07;
+	color: #555b6e;
+}
+
+.App a:hover,
+.App a:active {
+	color: #a1afaece;
 }
 
 ul.nav-bar li,

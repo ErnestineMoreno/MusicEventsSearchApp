@@ -79,9 +79,9 @@ class App extends React.Component {
                 () => {
                   return (<div>
                     <h1>bliss</h1>
-                    <h4>What is "bliss"? It's a music event search app powered by Songkick's exclusive live music data. 
+                    <h4>What is "bliss"? It's a music event search app powered by Songkick's exclusive live music database, 
                       <br></br>
-                                          Showcasing a plethora of both underground & mainstream artists available for you to choose from.
+                                          showcasing a plethora of both underground & mainstream artists available for you to choose from.
                                           <br></br> Search by Artist or City to view upcoming music festivals & events near you while you're on-the-go!</h4>
                     <video controls autoPlay height="300" width="400"><source src="/animation.mp4" type="video/mp4"></source></video>
                   </div>)
@@ -96,11 +96,12 @@ class App extends React.Component {
 <p>
                 <br></br>
                 <ul>
-                  <h2>Linkedin ➳ linkedin.com/in/etinamoreno/</h2>
-                  <h2>GitHub ➳ github.com/ErnestineMoreno </h2>
-                  <h2>Email ➳ ernestinemoreno4@gmail.com </h2>
-                  <br></br> <div>
-                  <h1>Created by Ernestine "Tina" Moreno &hearts; </h1>
+                     <h2>Creator: Ernestine "Tina" Moreno</h2>
+                        <h2>Email: ErnestineMoreno4@gmail.com </h2>
+                  <h2><a href="https://www.linkedin.com/in/etinamoreno/">➳ Linkedin</a></h2>
+                  <h2><a href="https://github.com/ErnestineMoreno">➳ GitHub</a></h2>
+                                   <br></br> <div>
+                
                   </div>
                   </ul>
 </p>                                    
