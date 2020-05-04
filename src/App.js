@@ -103,7 +103,7 @@ class App extends React.Component {
                   <h1>Created by Ernestine "Tina" Moreno &hearts; </h1>
                   </div>
                   </ul>
-</p>                                     
+</p>                                    
                                   )
               }
               } />
