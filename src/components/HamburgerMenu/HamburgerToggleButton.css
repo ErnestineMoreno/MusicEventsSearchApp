@@ -12,7 +12,7 @@
 	justify-content: space-between;
 }
 
-.toggle-button: focus {
+.toggle-button:focus {
 	outline: none;
 }
 
