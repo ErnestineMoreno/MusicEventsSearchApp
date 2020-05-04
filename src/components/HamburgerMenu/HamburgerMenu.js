@@ -1,25 +1,24 @@
-import React from 'react';
-import './HamburgerMenu.css';
+import React from 'react'
+import './HamburgerMenu.css'
 
 const hamburgerMenu = props => {
-    let hamburgerClasses = "hamburger";
-    if (props.show) {
-        hamburgerClasses = 'hamburger open';
-    }
+  let hamburgerClasses = 'hamburger'
+  if (props.show) {
+    hamburgerClasses = 'hamburger open'
+  }
 
-    return (
-        <nav className={hamburgerClasses}>
-            <ul>
-                                                <li><img src={'powered-by-songkick-pink.png'} alt="Songkick copyright logo"></img></li>
-            <li><a href="/">Home</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/ArtistList">Search By Artist</a></li>
-                <li><a href="/LocationList">Search By City</a></li>
-        </ul>
-        </nav>
-    
-    );
-    
-};
+  return (
+    <nav className={hamburgerClasses}>
+      <ul>
+        <li><img src='powered-by-songkick-pink.png' alt='Songkick copyright logo' /></li>
+        <li><a href='/'>Home</a></li>
+        <li><a href='/contact'>Contact</a></li>
+        <li><a href='/ArtistList'>Search By Artist</a></li>
+        <li><a href='/LocationList'>Search By City</a></li>
+      </ul>
+    </nav>
 
-export default hamburgerMenu;
+  )
+}
+
+export default hamburgerMenu
