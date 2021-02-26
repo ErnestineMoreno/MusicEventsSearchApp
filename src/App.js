@@ -61,10 +61,6 @@ class App extends React.Component {
                   { color: 'bisque'}
                 }>Home</NavLink></li>
 
-                <li><NavLink to="/contact" exact activeStyle={
-                  { color: 'bisque'}
-                }>Contact</NavLink></li>
-
                 <li><NavLink to="/ArtistList" exact activeStyle={
                   { color: 'bisque'}
                 }>Search by Artist ♬</NavLink></li>
