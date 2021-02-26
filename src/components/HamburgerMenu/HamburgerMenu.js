@@ -12,7 +12,6 @@ const hamburgerMenu = props => {
       <ul>
         <li><img src='powered-by-songkick-pink.png' alt='Songkick copyright logo' /></li>
         <li><a href='/'>Home</a></li>
-        <li><a href='/contact'>Contact</a></li>
         <li><a href='/ArtistList'>Search By Artist</a></li>
         <li><a href='/LocationList'>Search By City</a></li>
       </ul>
