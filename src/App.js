@@ -75,8 +75,8 @@ class App extends React.Component {
                 () => {
                   return (<div>
                     <br></br>
-                    <h1>Bliss</h1>
-                    <h4>Search for music events while you're on-the-go.</h4>
+                    <br></br>
+<h2>Search for music events while you're on-the-go.</h2>
                   </div>)
                   
                       }
