@@ -41,7 +41,7 @@ class LocationList extends React.Component {
       <div>
         <form className='search-bar' onSubmit={this.handleInputChange}>
           <input
-            placeholder="what's your location? type here..."
+            placeholder='Search'
             type='text'
             name='city'
             id='locations'
@@ -50,7 +50,7 @@ class LocationList extends React.Component {
             onChange={this.handleInputChange}
           />
           <button className='search-button' type='submit'>
-            <span role='img' aria-label='headphones'>🎧</span>
+            <span>Submit</span>
           </button>
         </form>
         {this.state.locations.map((value, index) => (

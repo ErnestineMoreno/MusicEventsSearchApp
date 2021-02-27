@@ -39,7 +39,7 @@ class ArtistList extends React.Component {
       <div>
         <form className='search-bar' onSubmit={this.handleInputChange}>
           <input
-            placeholder='which artist would you like to see live? type here...'
+            placeholder='Search'
             type='text'
             name='artists'
             id='artists'
@@ -48,7 +48,8 @@ class ArtistList extends React.Component {
             onChange={this.handleInputChange}
           />
           <button className='search-button' type='submit'>
-            <span role='img' aria-label='headphones'>🎧</span>
+            <span>Submit</span>
+
 
           </button>
         </form>
