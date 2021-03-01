@@ -76,32 +76,13 @@ class App extends React.Component {
                   return (<div>
                     <br></br>
                     <br></br>
+                    
 <h2>Search for music events while you're on-the-go.</h2>
                   </div>)
                   
                       }
                       } />        
-                      
-              <Route path="/contact" exact strict render={
-                () => {
-                  return ( 
-                    
-<p>
-                <br></br>
-                <ul>
-                     <h2>Creator: Ernestine "Tina" Moreno</h2>
-                        <h2>Email: ErnestineMoreno4@gmail.com </h2>
-                  <h2><a href="https://www.linkedin.com/in/etinamoreno/">➳ Linkedin</a></h2>
-                  <h2><a href="https://github.com/ErnestineMoreno">➳ GitHub</a></h2>
-                                   <br></br> <div>
-                
-                  </div>
-                  </ul>
-</p>                                    
-                                  )
-              }
-              } />
-          
+
        <Route path="/ArtistList" exact strict component={ArtistList} /> 
        <Route path="/LocationList" exact strict component={LocationList} />   
               
