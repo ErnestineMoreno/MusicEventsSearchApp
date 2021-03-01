@@ -14,7 +14,7 @@ const navbar = props => (
         <HamburgerToggleButton click={props.hamburgerClickHandler} />
       </div>
       <Router>
-        <div className='navbar-logo'><a href='/'> Bliss</a></div>
+        <div className='navbar-logo'><a href='/'>Bliss</a></div>
         <div className='logo-spacing' />
         <div className='navbar-search-items'>
           <p><img src='powered-by-songkick-pink.png' alt='Songkick copyright logo' /></p>
