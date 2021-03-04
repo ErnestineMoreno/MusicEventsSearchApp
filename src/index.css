@@ -1,51 +1,36 @@
-/* @import url('https://fonts.googleapis.com/css?family=Capriola&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
 /*Color Palette:
-#555B6E
-#89B0AE
-#DDBEA9
-#BEE3DB
-#ffd8be
-#FAF9F9
-#FFD6BA
-#cb997e
+#e9ecef
+#ced4da
+#495057
+#343a40
+#212529
 */
 
-*,
-:after,
-:before {
-	box-sizing: border-box;
-}
-
-/* color variables */
-:root {
-	--primary: #555b6e;
-	--secondary: #a5a58d;
-	--secondary-light: #ffd8be;
-}
 
 html {
 	height: 100%;
 }
 
 body {
-	background-color: #89b0ae;
+	background-color: #e9ecef;
 	margin: 0;
 	padding: 0;
 	height: 100%;
 	cursor: pointer;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Jost', sans-serif;
 }
 
 button {
-	background-color: #89b0ae;
+	background-color: #ced4da;
 	border: 0;
 	flex-grow: 0;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	line-height: 0;
 	padding: 0.75rem 1rem;
-	color: #555b6e;
+	color: #212529;
+	font-family: 'Jost', sans-serif;
 }
 
 button + button,
@@ -54,34 +39,37 @@ input + button {
 }
 
 form {
-	padding: 2rem 0;
+	padding: 7rem 0;
 }
 
 input {
-	background-color: #bee3db;
-	border: 2px solid #555b6e;
-	color: #555b6e;
+	background-color: #ced4da;
+	border: 2px solid #ced4da;
+	color: #212529;
 	flex-grow: 1;
 	font-size: 1rem;
 	padding: 0.75rem 1rem;
 	width: 100%;
-}
+	cursor: text;
+	}
 
 input::placeholder {
-	color: #4e4c4b;
-	font-family: 'Capriola', sans-serif;
-	font-size: 18px;
+	color: #495057;
+	font-family: 'Jost', sans-serif;
+	font-size: 1rem;
 }
 
 .search-bar {
 	align-items: center;
 	display: flex;
-	color: #555b6e;
+	font-family: 'Jost', sans-serif;
 }
 
 .submit {
-	color: #ffd8be;
+	color: #495057;
+	
 }
+
 /* media query to add more space between
 the button and input when the browser is at least
 600px wide */
@@ -93,10 +81,10 @@ the button and input when the browser is at least
 }
 
 h3 {
-	color: #555b6e;
+	color: #adb5bd;
 }
 
 p {
-	color: #555b6e;
+	color: #adb5bd;
 	font-size: 15px;
 }

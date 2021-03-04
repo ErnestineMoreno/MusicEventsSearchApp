@@ -3,7 +3,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #cb997e;
+	background-color: #212529;
 	height: 56px;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .navbar-logo a {
-	color: #555b6e;
+	color: #adb5bd;
 	text-decoration: none;
 	font-size: 2.4rem;
 }
@@ -32,7 +32,7 @@
 
 .navbar-search-items a {
 	text-decoration: none;
-	color: #cb997e;
+	color: #3a506b;
 }
 
 .navbar-search-items ul {
@@ -48,7 +48,7 @@
 
 .navbar-search-items a:hover,
 .navbar-search-items a:active {
-	color: #faf9f9;
+	color: #a1afaece;
 }
 
 /*remove top navigation items when viewing on a mobile device*/

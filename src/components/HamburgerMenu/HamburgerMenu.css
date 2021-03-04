@@ -1,7 +1,7 @@
 .hamburger {
 	height: 100%;
-	background-color: #555B6E;
-	box-shadow: 1px 0px 8px #555B6E;
+	background-color: #ced4da;
+	box-shadow: 1px 0px 8px #e9ecef;
 	/* fixed position so the menu doesn't overlap */
 	position: fixed;
 	top: 0;
@@ -34,12 +34,12 @@ transform: translateX(0);
 .hamburger a {
 	font-size: 1.4rem;
 	text-decoration: none;
-	color: #BEE3DB;
+	color: #495057;
 }
 
 .hamburger a:hover,
 .hamburger a:active {
-	color: #a1afaece;
+	color: #e9ecef;
 }
 
 @media (min-width: 769px ) {
