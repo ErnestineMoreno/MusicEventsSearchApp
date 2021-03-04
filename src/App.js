@@ -58,15 +58,15 @@ class App extends React.Component {
             
               <ul className="nav-bar">
                 <li><NavLink to="/" exact activeStyle={
-                  { color: 'bisque'}
+                  { color: '#ced4da'}
                 }>Home</NavLink></li>
 
                 <li><NavLink to="/ArtistList" exact activeStyle={
-                  { color: 'bisque'}
+                  { color: '#ced4da'}
                 }>Search by Artist</NavLink></li>
 
                 <li><NavLink to="/LocationList" exact activeStyle={
-                  { color: 'bisque'}
+                  { color: '#ced4da'}
                 }>Search by City</NavLink></li>
               </ul>
               

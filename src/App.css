@@ -1,7 +1,7 @@
 body {
 	cursor: pointer;
 	text-align: center;
-	color: #555b6e;
+	color: #495057;
 }
 
 .App ul {
@@ -15,12 +15,12 @@ body {
 	justify-content: center;
 	height: 100%;
 	padding: 0 1rem;
-	color: #555b6e;
+	color: #212529;
 }
 
 .App a:hover,
 .App a:active {
-	color: #a1afaece;
+	color: #ced4da;
 }
 
 ul.nav-bar li,
@@ -30,7 +30,7 @@ ul.nav-bar li a {
 	display: inline;
 	text-decoration: none;
 	list-style: none;
-	color: #555b6e;
+	color: #212529;
 }
 
 .App h2{-webkit-animation:bounce-in-fwd 2s ease-in both;animation:bounce-in-fwd 2s ease-in both}
@@ -39,7 +39,7 @@ h1,
 h2,
 h3,
 h4 {
-	color: #555b6e;
+	padding: 7rem 0;
 }
 
 img {

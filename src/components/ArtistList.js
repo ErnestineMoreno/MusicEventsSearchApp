@@ -39,7 +39,7 @@ class ArtistList extends React.Component {
       <div>
         <form className='search-bar' onSubmit={this.handleInputChange}>
           <input
-            placeholder='Search'
+            placeholder='Start typing'
             type='text'
             name='artists'
             id='artists'
