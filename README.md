@@ -1,8 +1,8 @@
-# bliss: Music Event Search App
+# Bliss: Music Event Search App
 
 ## Project Description
 
-My app is called "bliss" -- it is a music event search application using ReactJS and powered by utilizing Songkick's API database. This app is intended for users who are constantly 'on-the-go' and need to quixkly search for events near them; no login or sign-up required to access the app. Users can search for music events, festivals, and concerts by Artist Name and by  City or nearest Metro Area).
+My app is titled "Bliss" -- it is a music event search application using ReactJS and powered by utilizing Songkick's API database. This app is intended for users who are constantly 'on-the-go' and need to quixkly search for events near them; no login or sign-up required to access the app. Users can search for music events, festivals, and concerts by Artist Name and by  City or nearest Metro Area).
 
 
 ## Desktop Preview and Mobile Device Preview
