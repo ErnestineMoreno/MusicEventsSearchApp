@@ -2,10 +2,7 @@ import React from 'react'
 import './HamburgerMenu.css'
 
 const hamburgerMenu = props => {
-  let hamburgerClasses = 'hamburger'
-  if (props.show) {
-    hamburgerClasses = 'hamburger open'
-  }
+let hamburgerClasses = props.show ? 'hamburger open' : 'hamburger';
 
   return (
     <nav className={hamburgerClasses}>
