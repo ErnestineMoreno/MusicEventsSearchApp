@@ -28,7 +28,7 @@ state = {
       });
    };
 
-//Creating a function to enable the hamburger menu to close, once opened; then passing this to my Background component
+//Creating a function to enable the hamburger menu to close, once opened; then passing this to my background component
   backgroundClickHandler = () => {
     this.setState({hamburgerOpen: false});
   };
@@ -44,8 +44,8 @@ state = {
     return (
       
       <div style={{ height: '100%' }}>
-{/* Passing my hamburgerToggleClickHandler to the Navbar since it holds the button that triggers it */}
-{/* passing a prop to my Navbar */}
+        {/* Passing my hamburgerToggleClickHandler to the Navbar since it holds the button that triggers it */}
+        {/* passing a prop to my Navbar */}
         <Navbar hamburgerClickHandler={this.hamburgerToggleClickHandler} />
         <HamburgerMenu show={this.state.hamburgerOpen} />
         {background}

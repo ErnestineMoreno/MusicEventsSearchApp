@@ -17,11 +17,7 @@ class ArtistList extends React.Component {
     const data = await response.json()
     if (data.resultsPage.totalEntries > 0)
       {this.setState({
-      artists: data.resultsPage.results.artist,
-    });}
-    else
-      {this.setState({
-      artists: [],
+  artists: data.resultsPage.totalEntries > 0 ? data.resultsPage.results.artist : []
     });}
   }
 
