@@ -14,8 +14,10 @@ class LocationList extends React.Component {
   async fetchLocations (search) {
     const locationUrl = `https://api.songkick.com/api/3.0/search/locations.json?query=${search}&apikey=71oba8m5CPNDhwfE
 `
+    
     const response = await fetch(locationUrl)
     const data = await response.json()
+  // eslint-disable-next-line
         {this.setState({
   locations: data.resultsPage.totalEntries > 0 ? data.resultsPage.results.location : []
     });}
