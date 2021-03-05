@@ -19,7 +19,7 @@ My app is titled "Bliss" -- it is a music event search application using ReactJS
 - No install needed. For optimal user experience, use a web browser, preferably Google Chrome and/or Firefox to access the site.
 
 ## Deployment
-- Application deployed via [Heroku](https://www.heroku.com/). Deployment is synced to GitHub and configured to automatically deploy every time the code is pushed to the `master` branch.
+- Application deployed via [Vercel](https://bliss-nine.vercel.app/).
 
 ## Contribution Instructions
 > To get started...
