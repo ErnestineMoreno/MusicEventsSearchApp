@@ -6,11 +6,11 @@ My app is titled "Bliss" -- it is a music event search application using ReactJS
 
 
 ## Desktop Preview and Mobile Device Preview
-![Desktop, Homepage](desktop_home.png "Desktop Home")
-![Artist Search Page](ArtistSearchPreview.png "Desktop Artist Search")
-![City Search Page](CitySearchPreview.png "Desktop City Search")
-![Mobile Hamburger Menu 1](mobiledevice_preview1.png "Mobile Hamburger Menu 1")
-![Mobile Hamburger Menu 2](mobiledevice_preview2.png "Mobile Hamburger Menu 2")
+![Desktop, Homepage](READMEimages/desktophome.png "Desktop Home")
+![Artist Search Page](READMEimages/ArtistSearchPreview.png "Desktop Artist Search")
+![City Search Page](READMEimages/CitySearchPreview2.png "Desktop City Search")
+![Mobile Hamburger Menu 1](READMEimages/mobilehome.png "Mobile Hamburger Menu 1")
+![Mobile Hamburger Menu 2](READMEimages/mobilehome2.png "Mobile Hamburger Menu 2")
 
 ## Technologies and Frameworks Used
 - ReactJS, React Player, HTML5/CSS, Javascript
