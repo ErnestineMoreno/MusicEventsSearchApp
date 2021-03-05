@@ -73,12 +73,9 @@ state = {
               <Route path="/" exact strict render={
                 () => {
                   return (<div>
-                    <br></br>
-                    <br></br>
-                    
-<h2>Search for music events while you're on-the-go.</h2>
+<h2><span role="img" aria-label="headphones">
+🎧</span> Search for music events on-the-go</h2>
                   </div>)
-                  
                       }
                       } />        
 
