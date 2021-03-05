@@ -17,7 +17,7 @@
 	font-size: 2.4rem;
 }
 
-/* need spacing around logo to take entirety */
+/* Need spacing around logo to take entirety */
 .logo-spacing {
 	flex: 5;
 }
@@ -51,20 +51,20 @@
 	color: #a1afaece;
 }
 
-/*remove top navigation items when viewing on a mobile device*/
+/* Remove top navigation items when viewing on a mobile device*/
 @media (max-width: 769px) {
 	.navbar-search-items {
 		display: none;
 	}
 }
-/*remove hamburger from desktop and only visible when on a mobile device*/
+/* Remove hamburger from desktop and only visible when on a mobile device*/
 @media (min-width: 769px) {
 	.navbarToggle {
 		display: none;
 	}
 }
 
-/*to avoid extra margin when hamburger menu isn't showing on desktop */
+/* To avoid extra margin when hamburger menu isn't showing on desktop */
 .navbar-logo {
 	margin-left: 0;
 }
