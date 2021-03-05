@@ -15,8 +15,7 @@ class ArtistList extends React.Component {
     const artistUrl = `https://api.songkick.com/api/3.0/search/artists.json?apikey=71oba8m5CPNDhwfE&query=${search}`
     const response = await fetch(artistUrl)
     const data = await response.json()
-    if (data.resultsPage.totalEntries > 0)
-      {this.setState({
+        {this.setState({
   artists: data.resultsPage.totalEntries > 0 ? data.resultsPage.results.artist : []
     });}
   }

@@ -16,16 +16,11 @@ class LocationList extends React.Component {
 `
     const response = await fetch(locationUrl)
     const data = await response.json()
-    if (data.resultsPage.totalEntries > 0) {
-      this.setState({
-        locations: data.resultsPage.results.location
-      })
-    } else {
-      this.setState({
-        locations: []
-      })
-    }
+        {this.setState({
+  locations: data.resultsPage.totalEntries > 0 ? data.resultsPage.results.location : []
+    });}
   }
+  
 
   handleInputChange (event) {
     event.preventDefault()
