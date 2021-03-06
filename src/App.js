@@ -74,7 +74,8 @@ state = {
                 () => {
                   return (<div>
 <h2><span role="img" aria-label="headphones">
-🎧</span> Search for music events on-the-go</h2>
+                      🎧</span> <br></br><br></br>
+Search for music events on-the-go</h2>
                   </div>)
                       }
                       } />        
